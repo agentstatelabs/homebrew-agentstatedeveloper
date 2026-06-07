@@ -20,11 +20,11 @@ class Asd < Formula
   on_linux do
     on_intel do
       url "https://github.com/agentstatelabs/agentstatedeveloper-releases/releases/download/v1.0.93/asd-v1.0.93-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 ""
+      sha256 "ad55b566b0cab3d84caa01b9a90189cfbcaf15db02c014c8a184b2c738e355bf"
     end
     on_arm do
       url "https://github.com/agentstatelabs/agentstatedeveloper-releases/releases/download/v1.0.93/asd-v1.0.93-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 ""
+      sha256 "7a98533a492037dadb77347b4ed9d00bdefe2f190f519fcbf9d8da20622b42ef"
     end
   end
 
