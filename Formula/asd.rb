@@ -13,7 +13,7 @@ class Asd < Formula
     end
     on_intel do
       url "https://github.com/agentstatelabs/agentstatedeveloper-releases/releases/download/v1.0.93/asd-v1.0.93-x86_64-apple-darwin.tar.gz"
-      sha256 "pending"
+      sha256 "d505c8445e5341e4f30121d6ecaf96316cd30745e6f72906159e1309ddbb16ac"
     end
   end
 
