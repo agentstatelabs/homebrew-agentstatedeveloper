@@ -2,7 +2,7 @@
 
 class Asd < Formula
   desc "AgentStateDeveloper — semantic state layer + read API for AI agents on code"
-  homepage "https://github.com/agentstatelabs/agentstatedeveloper"
+  homepage "https://github.com/agentstatelabs/AgentStateDeveloper"
   version "1.0.93"
   license "BSL-1.1"
 
@@ -46,7 +46,7 @@ class Asd < Formula
       Then any tool wired to `asd-mcp` (Claude Desktop, Claude Code, Codex)
       will see this repo as its active context.
 
-      Docs: https://github.com/agentstatelabs/agentstatedeveloper
+      Docs: https://github.com/agentstatelabs/AgentStateDeveloper
     EOS
   end
 
