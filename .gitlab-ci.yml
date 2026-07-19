@@ -1,6 +1,6 @@
 
 publish-github:
-  stage: .post
+  stage: deploy
   image: alpine:latest
   rules:
     - if: '$CI_COMMIT_BRANCH == "main" && $GITHUB_REPO'
