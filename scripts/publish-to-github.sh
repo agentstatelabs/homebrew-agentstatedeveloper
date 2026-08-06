@@ -33,11 +33,21 @@ GH_URL="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git"
 git remote remove github 2>/dev/null || true
 git remote add github "$GH_URL"
 
-# --- push ONLY main (fast-forward only) --------------------------------------
-# --force-with-lease is deliberately NOT used: a non-fast-forward means GitHub
-# diverged unexpectedly — fail loudly rather than overwrite.
+# --- push ONLY main (GitLab is source of truth; force-with-lease) ------------
+# GitLab `origin` is authoritative for this tap: scripts/release.sh writes the
+# formula here with the real artifact sha256s. GitHub can drift when a separate
+# publisher writes to the GitHub tap directly (the asd-release-bot homebrew-tap
+# GitHub Action did exactly this, leaving GitHub one commit ahead so a plain
+# fast-forward push was rejected non-ff every release — same bug fixed in the
+# CTXone tap). --force-with-lease makes GitLab deterministically win each release
+# while still refusing to clobber the ref if it moved out from under us mid-job.
 echo ">> pushing main -> github"
-git push github "HEAD:refs/heads/main"
+GH_MAIN="$(git ls-remote github refs/heads/main 2>/dev/null | awk '{print $1}')"
+if [ -n "$GH_MAIN" ]; then
+  git push --force-with-lease="refs/heads/main:${GH_MAIN}" github "HEAD:refs/heads/main"
+else
+  git push github "HEAD:refs/heads/main"
+fi
 
 # --- push release tags matching TAG_PREFIX -----------------------------------
 if [ -n "${CI_COMMIT_TAG:-}" ]; then
