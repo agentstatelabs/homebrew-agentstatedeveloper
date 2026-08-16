@@ -3,28 +3,28 @@
 class Asd < Formula
   desc "AgentStateDeveloper — semantic state layer + read API for AI agents on code"
   homepage "https://github.com/agentstatelabs/AgentStateDeveloper"
-  version "0.9.38"
+  version "0.9.39"
   license "BSL-1.1"
 
   on_macos do
     on_arm do
-      url "https://github.com/agentstatelabs/agentstatedeveloper-releases/releases/download/v0.9.38/asd-v0.9.38-aarch64-apple-darwin.tar.gz"
-      sha256 "6763f97ca52f28a1b69ff5cf757232ef2a4c40489b36c97b3e6714cf31b79256"
+      url "https://github.com/agentstatelabs/agentstatedeveloper-releases/releases/download/v0.9.39/asd-v0.9.39-aarch64-apple-darwin.tar.gz"
+      sha256 "06e7d14b0b53a1efb219c5577f887cf0d42b479874b8f0c4b9d1a50a4ec1a618"
     end
     on_intel do
-      url "https://github.com/agentstatelabs/agentstatedeveloper-releases/releases/download/v0.9.38/asd-v0.9.38-x86_64-apple-darwin.tar.gz"
-      sha256 "f75fb5aa5fe95838b50b791b763a6f67d7c945328f389758bcc376df51e9b857"
+      url "https://github.com/agentstatelabs/agentstatedeveloper-releases/releases/download/v0.9.39/asd-v0.9.39-x86_64-apple-darwin.tar.gz"
+      sha256 "6ed6a847317b7b33b0addd0cf51a99ec60f735be5d61648db8326e0cf8209dd0"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/agentstatelabs/agentstatedeveloper-releases/releases/download/v0.9.38/asd-v0.9.38-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5dafaa74ab68efc8e1705918081fc51696d182faf822bd9403d4d446de2eaa44"
+      url "https://github.com/agentstatelabs/agentstatedeveloper-releases/releases/download/v0.9.39/asd-v0.9.39-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "87d98f3c787c8978c72e6f4cc197562dd7205675da738b0cfa1ab7a0ee41bd9e"
     end
     on_arm do
-      url "https://github.com/agentstatelabs/agentstatedeveloper-releases/releases/download/v0.9.38/asd-v0.9.38-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "ccc9a29e12cbb5a93b8d06182b3916d4e096921bd53d8a9037fceef83d9995f6"
+      url "https://github.com/agentstatelabs/agentstatedeveloper-releases/releases/download/v0.9.39/asd-v0.9.39-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ff040ba02df773c6e3a570c25318f3a3ce2d157191d53ef6d0bce8e10a2460e6"
     end
   end
 
