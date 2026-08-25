@@ -4,7 +4,7 @@ class Asd < Formula
   desc "AgentStateDeveloper — semantic state layer + read API for AI agents on code"
   homepage "https://github.com/agentstatelabs/AgentStateDeveloper"
   version "1.0.0"
-  license "BSL-1.1"
+  license "BUSL-1.1"
 
   on_macos do
     on_arm do
