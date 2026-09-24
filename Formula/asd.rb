@@ -3,28 +3,28 @@
 class Asd < Formula
   desc "AgentStateDeveloper — semantic state layer + read API for AI agents on code"
   homepage "https://github.com/agentstatelabs/AgentStateDeveloper"
-  version "1.2.1"
+  version "1.4.0"
   license "BUSL-1.1"
 
   on_macos do
     on_arm do
-      url "https://github.com/agentstatelabs/agentstatedeveloper-releases/releases/download/v1.2.1/asd-v1.2.1-aarch64-apple-darwin.tar.gz"
-      sha256 "e7d740f248c97298f65baa12c971ac5296466e4ba6fa867b39a6bb82157c6df4"
+      url "https://github.com/agentstatelabs/agentstatedeveloper-releases/releases/download/v1.4.0/asd-v1.4.0-aarch64-apple-darwin.tar.gz"
+      sha256 "05b2e6a7e80a2917a4daa1be79bc21093e6d79f354c670316106138b36059285"
     end
     on_intel do
-      url "https://github.com/agentstatelabs/agentstatedeveloper-releases/releases/download/v1.2.1/asd-v1.2.1-x86_64-apple-darwin.tar.gz"
-      sha256 "6d297b1f968b72d1110ad66eb9d9aad09e85003e80730e52355b340b7512879e"
+      url "https://github.com/agentstatelabs/agentstatedeveloper-releases/releases/download/v1.4.0/asd-v1.4.0-x86_64-apple-darwin.tar.gz"
+      sha256 "183723089ab7ca540e574f500c13efb978f65adff61ef9386e4d4d71806d95cb"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/agentstatelabs/agentstatedeveloper-releases/releases/download/v1.2.1/asd-v1.2.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d4f6cfde16f2d38932375ad69465f0ca3aa587ce6ef6744a265591f71c6b2a3c"
+      url "https://github.com/agentstatelabs/agentstatedeveloper-releases/releases/download/v1.4.0/asd-v1.4.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "6ce864e6dadfd05e21f2501ea10f13653062fdb88dc06c6bf8d2a2d11f1b0fbb"
     end
     on_arm do
-      url "https://github.com/agentstatelabs/agentstatedeveloper-releases/releases/download/v1.2.1/asd-v1.2.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "b489a6a7b06506052fe78ed9479f52c725905186f8619b55cbd4528a4dc49cb8"
+      url "https://github.com/agentstatelabs/agentstatedeveloper-releases/releases/download/v1.4.0/asd-v1.4.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "b035e62523bbdc9dbaad9344c2fb60a1f68e6bc2ad1d86ab981256c54055d219"
     end
   end
 
